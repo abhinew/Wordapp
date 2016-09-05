@@ -1,0 +1,27 @@
+.revise-page {
+  text-align: center;
+  .word {
+    color: #0000ff;
+    font-size: 20px;
+    margin: 20px 0;
+  }
+  .question-box {
+
+  }
+  .buttons-container {
+    input {
+      &:nth-of-type(n+1) {
+        margin-left: 30px;
+      }
+    }
+  }
+
+  .container {
+    width: 100%;
+    margin: 0;
+
+  }
+  .hide {
+    display: none;
+  }
+}
