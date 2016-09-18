@@ -1,7 +1,7 @@
 /**
  * Created by abhi on 05/09/16.
  */
-$("document").ready (function(){
+$(document).ready (function(){
 
     $(".show-meaning").click(function(){
         $(".question-box").removeClass("hide");

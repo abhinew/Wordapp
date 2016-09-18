@@ -11,7 +11,7 @@ class WordsController < ApplicationController
 
   end
 
-  def revise_new
+  def revise_unknown
 
   end
 
