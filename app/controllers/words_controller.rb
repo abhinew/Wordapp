@@ -11,7 +11,11 @@ class WordsController < ApplicationController
 
   end
 
-  def revise
+  def revise_new
+
+  end
+
+  def revise_known
 
   end
 
@@ -22,7 +26,6 @@ class WordsController < ApplicationController
   end
 
   def set_category
-
 
 
     category = params[:category]

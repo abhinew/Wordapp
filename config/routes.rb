@@ -6,7 +6,8 @@ Rails.application.routes.draw do
 
   get 'new', :controller => :words, :action => :new
 
-  get 'revise', :controller => :words, :action => :revise
+  get 'revise_new', :controller => :words, :action => :revise_new
+  get 'revise_known', :controller => :words, :action => :revise_known
 
   post 'category', :controller => :words, :action => :set_category
 
