@@ -15,6 +15,12 @@ class WordsController < ApplicationController
 
   end
 
+  def get_word
+    category = params[:category]
+    @word = Word.where(:category => category).order('RANDOM()').limit(1)
+    render json: @word[0]
+  end
+
   def set_category
 
 

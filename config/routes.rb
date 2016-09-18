@@ -10,4 +10,6 @@ Rails.application.routes.draw do
 
   post 'category', :controller => :words, :action => :set_category
 
+  get 'word', :controller => :words, :action => :get_word
+
 end
