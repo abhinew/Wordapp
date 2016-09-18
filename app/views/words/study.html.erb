@@ -1,11 +1,11 @@
 <div class="study-page">
   <h2>Study new words</h2>
-  <div class="word">abdicate</div>
+  <div class="word"></div>
   <h3>Do you know this word?</h3>
   <div class="buttons-container">
-    <input type="radio" value="Yes" /> Yes
-    <input type="radio" value="No" /> No
-    <input type="button" value="Next" />
+    <input type="radio" name="selection" value="Yes" /> Yes
+    <input type="radio" name="selection" value="No" /> No
+    <input id="next" type="button" value="Next" />
   </div>
   <div class="container">
 
@@ -13,21 +13,28 @@
       <li class="active"><a data-toggle="tab" href="#google">Google</a></li>
       <li><a data-toggle="tab" href="#vocab">Vocabulary</a></li>
       <li><a data-toggle="tab" href="#oxford">Oxford</a></li>
+      <li><a data-toggle="tab" href="#webster">Webster</a></li>
     </ul>
     <div class="tab-content">
       <div id="google" class="tab-pane fade in active">
-
-        <p>(of a monarch) renounce one's throne</p>
+        <img id="google-meaning" alt="google-definition"/>
       </div>
       <div id="vocab" class="tab-pane fade">
-
-        <p>fail to fulfil or undertake (a responsibility or duty)</p>
+        <img id="vocab-meaning" alt="vocab-definition"/>
       </div>
       <div id="oxford" class="tab-pane fade">
-
-        <p>fail to fulfil or undertake (a responsibility or duty)</p>
+        <img id="oxford-meaning" alt="oxford-definition"/>
       </div>
+      <div id="webster" class="tab-pane fade">
+        <img id="webster-meaning" alt="webster-definition"/>
+      </div>
+
     </div>
   </div>
 </div>
+<!--<img src="/assets/google/chameleon.png" />-->
+<!--<img src="/assets/vocab-chameleon.png" />-->
+<!--<img src="/assets/oxford-chameleon.png" />-->
+<!--<img src="/assets/webster-chameleon.png" />-->
 
+<%= javascript_include_tag 'study' %>
